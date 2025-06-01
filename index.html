@@ -136,13 +136,14 @@
       </section>
       <!-- section team -->
       <section class="team">
-        <div class="container">
+        <div class="container container__team">
           <h2 class="team__title">Our Team</h2>
           <ul class="team__list">
             <li class="team__item">
               <img
                 class="team__photo"
-                src="./images/team/img-1.jpg"
+                srcset="./images/team/team-1@2x.jpg 2x"
+                src="./images/team/team-1.jpg"
                 alt="Product Designer"
                 width="264"
               />
@@ -184,7 +185,8 @@
             <li class="team__item">
               <img
                 class="team__photo"
-                src="./images/team/img-2.jpg"
+                srcset="./images/team/team-2@2x.jpg 2x"
+                src="./images/team/team-2.jpg"
                 alt="Frontend Developer"
                 width="264"
               />
@@ -226,7 +228,8 @@
             <li class="team__item">
               <img
                 class="team__photo"
-                src="./images/team/img-3.jpg"
+                srcset="./images/team/team-3@2x.jpg 2x"
+                src="./images/team/team-3.jpg"
                 alt="Marketing"
                 width="264"
               />
@@ -268,7 +271,8 @@
             <li class="team__item">
               <img
                 class="team__photo"
-                src="./images/team/img-4.jpg"
+                srcset="./images/team/team-4@2x.jpg 2x"
+                src="./images/team/team-4.jpg"
                 alt="UI Designer"
                 width="264"
               />
@@ -312,17 +316,33 @@
       </section>
       <!-- section portfolio -->
       <section class="portfolio">
-        <div class="container">
+        <div class="container portfolio__container">
           <h2 class="portfolio__title">Our Portfolio</h2>
           <ul class="portfolio__list">
             <li class="portfolio__item">
-              <div class="portfolio__item--wrapper">
-                <img
-                  class="portfolio__image"
-                  src="./images/portfolio/img-5.jpg"
-                  alt="App"
-                  width="360"
-                />
+              <div class="portfolio__item-wrapper">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/portfolio-pc1.jpg    1x,
+                      ./images/portfolio/portfolio-pc1@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/portfolio-tab1.jpg    1x,
+                      ./images/portfolio/portfolio-tab1@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    class="portfolio__image"
+                    srcset="./images/portfolio/portfolio-mob1@2x.jpg 2x"
+                    src="./images/portfolio/portfolio-mob1.jpg"
+                    alt="App"
+                  />
+                </picture>
 
                 <p class="portfolio__item-overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -336,13 +356,29 @@
               </div>
             </li>
             <li class="portfolio__item">
-              <div class="portfolio__item--wrapper">
-                <img
-                  class="portfolio__image"
-                  src="./images/portfolio/img-6.jpg"
-                  alt="Marketing"
-                  width="360"
-                />
+              <div class="portfolio__item-wrapper">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/portfolio-pc2.jpg    1x,
+                      ./images/portfolio/portfolio-pc2@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/portfolio-tab2.jpg    1x,
+                      ./images/portfolio/portfolio-tab2@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    class="portfolio__image"
+                    srcset="./images/portfolio/portfolio-mob2@2x.jpg 2x"
+                    src="./images/portfolio/portfolio-mob2.jpg"
+                    alt="App"
+                  />
+                </picture>
 
                 <p class="portfolio__item-overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -356,13 +392,29 @@
               </div>
             </li>
             <li class="portfolio__item">
-              <div class="portfolio__item--wrapper">
-                <img
-                  class="portfolio__image"
-                  src="./images/portfolio/img-7.jpg"
-                  alt="App"
-                  width="360"
-                />
+              <div class="portfolio__item-wrapper">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/portfolio-pc3.jpg    1x,
+                      ./images/portfolio/portfolio-pc3@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/portfolio-tab3.jpg    1x,
+                      ./images/portfolio/portfolio-tab3@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    class="portfolio__image"
+                    srcset="./images/portfolio/portfolio-mob3@2x.jpg 2x"
+                    src="./images/portfolio/portfolio-mob3.jpg"
+                    alt="App"
+                  />
+                </picture>
 
                 <p class="portfolio__item-overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -376,13 +428,29 @@
               </div>
             </li>
             <li class="portfolio__item">
-              <div class="portfolio__item--wrapper">
-                <img
-                  class="portfolio__image"
-                  src="./images/portfolio/img-8.jpg"
-                  alt="Marketing"
-                  width="360"
-                />
+              <div class="portfolio__item-wrapper">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/portfolio-pc4.jpg    1x,
+                      ./images/portfolio/portfolio-pc4@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/portfolio-tab4.jpg    1x,
+                      ./images/portfolio/portfolio-tab4@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    class="portfolio__image"
+                    srcset="./images/portfolio/portfolio-mob4@2x.jpg 2x"
+                    src="./images/portfolio/portfolio-mob4.jpg"
+                    alt="App"
+                  />
+                </picture>
 
                 <p class="portfolio__item-overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -396,13 +464,29 @@
               </div>
             </li>
             <li class="portfolio__item">
-              <div class="portfolio__item--wrapper">
-                <img
-                  class="portfolio__image"
-                  src="./images/portfolio/img-9.jpg"
-                  alt="Design"
-                  width="360"
-                />
+              <div class="portfolio__item-wrapper">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/portfolio-pc5.jpg    1x,
+                      ./images/portfolio/portfolio-pc5@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/portfolio-tab5.jpg    1x,
+                      ./images/portfolio/portfolio-tab5@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    class="portfolio__image"
+                    srcset="./images/portfolio/portfolio-mob5@2x.jpg 2x"
+                    src="./images/portfolio/portfolio-mob5.jpg"
+                    alt="App"
+                  />
+                </picture>
 
                 <p class="portfolio__item-overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -416,13 +500,29 @@
               </div>
             </li>
             <li class="portfolio__item">
-              <div class="portfolio__item--wrapper">
-                <img
-                  class="portfolio__image"
-                  src="./images/portfolio/img-10.jpg"
-                  alt="Marketing"
-                  width="360"
-                />
+              <div class="portfolio__item-wrapper">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/portfolio-pc6.jpg    1x,
+                      ./images/portfolio/portfolio-pc6@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/portfolio-tab6.jpg    1x,
+                      ./images/portfolio/portfolio-tab6@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    class="portfolio__image"
+                    srcset="./images/portfolio/portfolio-mob6@2x.jpg 2x"
+                    src="./images/portfolio/portfolio-mob6.jpg"
+                    alt="App"
+                  />
+                </picture>
 
                 <p class="portfolio__item-overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -442,7 +542,7 @@
     </main>
     <!-- FOOTER -->
     <footer class="footer">
-      <div class="container">
+      <div class="container container__footer">
         <!-- left side -->
         <div class="footer__leftside">
           <a class="footer__logo" href="/"
