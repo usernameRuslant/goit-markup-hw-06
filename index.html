@@ -587,24 +587,7 @@
             </li>
           </ul>
         </div>
-        <!-- form side -->
-        <!-- <form class="footer-email-form">
-          <label class="footer-email-label" for="email">Subscribe</label>
-          <input
-            class="footer-email-input"
-            id="email"
-            type="email"
-            name="email_subscribe"
-            placeholder="E-mail"
-            required
-          />
-          <button class="footer-email-button" type="submit">
-            Subscribe
-            <svg class="footer-button-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-send"></use>
-            </svg>
-          </button>
-        </form> -->
+
         <div class="footer-email-form-wrapper">
           <p class="footer-email-title">Subscribe</p>
           <form class="footer-email-form">
@@ -629,7 +612,7 @@
       </div>
     </footer>
     <!-- backdrop+modal -->
-    <div class="modal-backdrop">
+    <div class="modal-backdrop is-open">
       <div class="modal">
         <!-- Кнопка закрытия -->
         <button class="modal-close-button" type="button">
@@ -722,15 +705,17 @@
                   <use href="./images/icons.svg#icon-checkbox"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="modal-privacy-link"
+              <span class="modal-checkbox-text-wrapper">
+                I accept the terms and conditions of the
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="modal-privacy-link"
+                >
+                  Privacy Policy
+                </a></span
               >
-                Privacy Policy
-              </a>
             </label>
           </div>
 
@@ -741,7 +726,7 @@
     </div>
 
     <!-- mobile-menu-modal -->
-    <div class="mobile-menu">
+    <div class="mobile-menu is-open">
       <div class="container mobile-menu__container">
         <button class="mobile-menu__close-button">
           <svg class="mobile-menu__close-icon" width="24" height="24">
@@ -764,15 +749,15 @@
         <address class="mobile-menu__contacts">
           <ul class="mobile-menu__contacts-list">
             <li class="mobile-menu__contacts-item">
+              <a class="mobile-menu__contacts-link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="mobile-menu__contacts-item">
               <a
                 class="mobile-menu__contacts-link"
                 href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
-              >
-            </li>
-            <li class="mobile-menu__contacts-item">
-              <a class="mobile-menu__contacts-link" href="tel:+110001111111"
-                >+11 (000) 111-11-11</a
               >
             </li>
           </ul>
